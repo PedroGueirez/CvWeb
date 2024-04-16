@@ -6,9 +6,11 @@ function render(perfis) {
 //texto inicial
   const firstBox = document.createElement("div");
   firstBox.id = "firstBox";
-  firstBox.innerHTML = '<div class="linha1">JUNIOR FULL-STACK DEVELOPER</div>' +
+  firstBox.innerHTML = '<div class="linha1">FULL-STACK DEVELOPER</div>' +
   '<div class="linha2">I can help your business to</div>' +
   '<div class="linha3">Get better and grow fast</div>';
+
+  
   
   container.appendChild(firstBox);
 
@@ -26,7 +28,7 @@ butoes.innerHTML = `
     </div>
 `;
 
-container.appendChild(butoes);
+firstBox.appendChild(butoes);
 
     //Imagem de perfil
     const imagePerfil = document.createElement("div");
@@ -35,8 +37,23 @@ container.appendChild(butoes);
     imagePerfil.innerHTML = `<img src="resources/foto1.jpg"  style="width: 300px; height: auto; border-radius: 10%"> `;
     container.appendChild(imagePerfil);
 
+
+
+
+    const rodape = document.createElement("div");
+    rodape.id = "rodape";
+    rodape.innerHTML = '<div class="rodape1">About me</div>' +
+    '<div class="rodape2">My name is Start Bootstrap and I help brands grow.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?</div>' +
+
+      '<div class="rodape3">papapaap</div>';
+    
+    container.appendChild(rodape);
+
+
+    
+
     //info pessoais
-    perfis.forEach(({ telefone, email, morada }) => {
+   /* perfis.forEach(({ telefone, email, morada }) => {
         const infoPerfil = document.createElement("div");
         infoPerfil.id = "infoPerfil";
 
@@ -56,12 +73,17 @@ container.appendChild(butoes);
 `;
 
         container.appendChild(infoPerfil);
-    });
+    });*/
 
 
+
+
+//rodape
 
 
 }
+
+
 export default { render };
 
 
