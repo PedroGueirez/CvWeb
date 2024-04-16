@@ -1,0 +1,84 @@
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+}
+
+#anchors {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: red;
+}
+
+#search{
+    float: right;
+}
+
+
+#firstBox{
+    display:flex;
+    margin-top: 6%;  
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    
+}
+.linha1{
+    display: flex; ;
+    font-size:20px;
+    font-family: cursive;
+    background: linear-gradient(90deg, rgba(68,58,180,1) 32%, rgba(230,23,48,1) 100%);
+    color: aliceblue;
+}
+.linha2{
+    display: flex;
+    font-size: 40px;;
+    color: black;
+}
+.linha3{
+display: flex;
+font-size: 70px;
+font-family: cursive;
+background: linear-gradient(90deg, rgba(68,58,180,1) 32%, rgba(230,23,48,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+#butoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#containerPerfil{
+    
+        background-image: url('/resources/image.jpegaaaaa');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+      
+}
+
+#imagePerfil{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    
+}
+
+#infoPerfil{
+    position: absolute;
+    width: fit-content;
+    margin-top: 30%;
+    margin-left: 50%;
+    border: solid 20px white;
+}
+
+
+
+
+
+
+
