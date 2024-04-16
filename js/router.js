@@ -24,8 +24,8 @@ function navigate(path) {
     let route = routes[routesKey];
 
     if (!route) {
-        route = routes.home;
-        window.location.hash = routes.home.path;
+        route = routes.perfil;
+        window.location.hash = routes.perfil.path;
     }
 
     setCurrentRoute(route);
@@ -37,7 +37,7 @@ function getPath(urlStr) {
 }
 
 function init() {
-    window.location.hash = window.location.hash || routes.home.path;
+    window.location.hash = window.location.hash || routes.perfil.path;
 
     navigate(getPath(window.location.href));
 

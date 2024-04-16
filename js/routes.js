@@ -1,12 +1,12 @@
 export default {
     home: {
-        path: "/",
+        path: "/home",
         controller: "homeController",
     },
 
 
     perfil: {
-        path: "/perfil",
+        path: "/",
         controller: "perfilController"
     },
 
