@@ -1,116 +1,50 @@
 function render(perfis) {
     const container = document.querySelector("#container");
-    container.id = "containerPerfil";
+    container.id = "container";
     container.innerHTML = "";
 
-//texto inicial
-  const firstBox = document.createElement("div");
-  firstBox.id = "firstBox";
-  firstBox.innerHTML = '<div class="linha1">FULL-STACK DEVELOPER</div>' +
-  '<div class="linha2">I can help your business to</div>' +
-  '<div class="linha3">Get better and grow fast</div>';
-
-  
-  
-  container.appendChild(firstBox);
-
-//butoes 
-const butoes = document.createElement("div");
-butoes.id = "butoes";
-butoes.innerHTML = `
-    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btncheck1">Projects</label>
-
-        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btncheck2">Experience</label>
-
-    </div>
-`;
-
-firstBox.appendChild(butoes);
-
-    //Imagem de perfil
-    const imagePerfil = document.createElement("div");
-    imagePerfil.id = "imagePerfil";
-
-    imagePerfil.innerHTML = `<img src="resources/foto1.jpg"  style="width: 300px; height: auto; border-radius: 10%"> `;
-    container.appendChild(imagePerfil);
-
-
-
-
-    const rodape = document.createElement("div");
-    rodape.id = "rodape";
-    rodape.innerHTML = '<div class="rodape1">About me</div>' +
-    '<div class="rodape2">My name is Start Bootstrap and I help brands grow.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?</div>' +
-
-      '<div class="rodape3">papapaap</div>';
+         //caixa apresentaçao
+        const apresentation = document.createElement("div");
+        apresentation.id ="apresentation";
+        container.appendChild(apresentation);
+                //frase bonita
+                const frase = document.createElement("div");
+                frase.id = "frase";
+                frase.innerHTML = '<div class="frase1">FULL-STACK DEVELOPER</div>' +
+                '<div class="frase2">I can help your business to</div>' +
+                '<div class="frase3">Get better and grow fast</div>';
+                
+                apresentation.appendChild(frase);
     
-    container.appendChild(rodape);
+                //imagem
+                const imagemPerfil = document.createElement("div");
+                imagemPerfil.id = "imagemPerfil";
+                imagemPerfil.innerHTML = '<img src="resources/foto1.jpg"  style="width: 300px; height: auto; border-radius: 10%">';
+                apresentation.appendChild(imagemPerfil);
 
+        //contactos
+        const contactos = document.createElement("div");
+        contactos.id = "contactos";
+        contactos.innerHTML = `
+        <button type="button" class="btn btn-outline-success">Education</button>
+        <button type="button" class="btn btn-outline-success">Projects</button>`;
+        container.appendChild(contactos);
 
-    
+        //About me
+        const aboutMe = document.createElement("div");
+        aboutMe.id = "aboutMe";
+        aboutMe.innerHTML = '<div class = "aboutme1"> About me </div>' +
+        '<div class = "aboutme2"> I\'m a former captain of the management and administration ship who decided to navigate the seas of code. I\'ve dabbled in sales, led teams, and now, I\'m plunging into the programming ocean.</div>' +
+        '<div class = "aboutme2"> Whether steering projects or charming clients, I\'m always seeking the next frontier. Currently, I\'m navigating the tech universe, where every bug is a challenge to conquer, and every line of code is a small victory.</div>' +
+        '<div class = "aboutme2"> Outside the coding sphere, catch me grooving to music, appreciating the wonders of nature, indulging in video games, and exploring all things tech-related.</div>' +
+        '<div class = "aboutme2">Let\'s collaborate and create something amazing together.</div>';
+        container.appendChild(aboutMe);
 
-    //info pessoais
-   /* perfis.forEach(({ telefone, email, morada }) => {
-        const infoPerfil = document.createElement("div");
-        infoPerfil.id = "infoPerfil";
-
-        infoPerfil.innerHTML = ` <div class="card" style="width: 18rem;">
-        <div class="card-header">
-          Pedro Gueirez
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">${telefone}</li>
-          <li class="list-group-item">${email}</li>
-          <li class="list-group-item">${morada}</li>
-        </ul>
-      </div>
-        
-        
-
-`;
-
-        container.appendChild(infoPerfil);
-    });*/
-
-
-
-
-//rodape
-
-
+        //footer
+        const footer = document.createElement("div");
+        footer.id = "footer";
+        footer.innerHTML = '<div> FOOTER REDES SOCIAIS </div>';
+        container.appendChild(footer);
+      
 }
-
-
 export default { render };
-
-
-
-
-
-
-
-
-/*  container.innerHTML = "<br>";
-const list = document.createElement("div");
-
-list.style = `display: flex; margin-top: 10%`;
-list.className = `text-center`;
-
-perfis.forEach(({nome, ano, director}) => {
-const item = document.createElement("div");
-item.className = `col card text-white bg-primary mb-3" style="max-width: 18rem;`;
- item.innerHTML = `<div class="card-header">${nome}</div>
-                        <div class="card-body">
-                            <h5 class="card-title">${ano}</h5>
-                            <p class="card-text">
-                                <p>year: ${director}</p>
-                            </p>
-                    </div>`;
- list.appendChild(item);                   
-});  */
-
-
-

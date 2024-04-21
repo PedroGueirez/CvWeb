@@ -1,8 +1,14 @@
 export default {
-    home: {
-        path: "/home",
-        controller: "homeController",
+    education: {
+        path: "/education",
+        controller: "educationController",
     },
+
+    experience: {
+        path: "/experience",
+        controller: "experienceController",
+    },
+
 
 
     perfil: {
