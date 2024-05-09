@@ -1,7 +1,7 @@
 # CvWeb
 
 ## Description
-CvWeb is an IN-DEVELOPMENT, highly versatile single page application (SPA) framework designed to enable rapid and efficient development of any type of website, from personal portfolios to complex enterprise applications. This framework is being built with flexibility and performance in mind, providing developers with the tools they need to create responsive and dynamic web experiences.
+CvWeb is an IN-DEVELOPMENT, highly versatile single page application (SPA) framework designed to enable rapid and efficient development of any type of website, from personal portfolios to complex enterprise applications. This is being built with flexibility and performance in mind, providing developers with the tools they need to create responsive and dynamic web experiences.
 
 ## Project Status
 **Note:** This project is currently under active development and is not yet ready for production use. Features and documentation are in the process of being added and may change frequently.
