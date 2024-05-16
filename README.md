@@ -11,7 +11,6 @@ CvWeb is an IN-DEVELOPMENT, highly versatile single page application (SPA) frame
 - JavaScript
 - Node.js 
 - CSS
-- Thymeleaf
 - Bootstrap
 
 ## Features
